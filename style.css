@@ -48,7 +48,6 @@ body{
   grid-row: 1fr 1fr;
 }
 .right-grid{
-  /* order: -1; */
   display: grid;
   max-width: 630px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -183,4 +182,78 @@ bottom: -50px;
 }
 .right-grid > div:nth-child(6) img{
   width: 50%;
+}
+@media (max-width:804px) {
+  body{
+    padding: 20px;
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .right-grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper div div{
+    display: flex;
+    justify-content: center;
+    min-height: fit-content;
+    padding: 60px ;
+  }
+  .right-grid > div:nth-child(3){
+    background-color: #ffcc69;
+    height: 200px;
+    padding: 20px;
+  }
+  .consSch{
+    justify-content: flex-start;
+    display: flex;
+    gap: 0px  !important;
+  }
+  .consSch img{
+    width: 60%;
+    position: relative;
+    object-fit: contain;
+    width: 80%;
+    justify-content: flex-start;
+  }
+  .sch img{
+    width: calc(100% - 20px);
+    object-position: center;
+  }
+  .fasteraudi p {
+    font-size: 20px;
+    font-weight: 600
+  }
+  .fasteraudi img{
+    width: 50%;
+  }
+  .right-grid > div:nth-child(6) {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    flex-direction: column;
+  }
+  .right-grid > div:nth-child(6) img {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .right-grid > div:nth-child(6) p{
+    margin: 0px;
+  }
+  .left-grid {
+    width: 100% ;
+    max-width: 100%;
+  }
+  .left-grid > div:nth-child(1){
+    font-size: 32px;
+  }
+  .left-grid > div:nth-child(1) img{
+    width: 70%;
+  }
+  .left-grid > div:nth-child(2) img{
+    width: 70%;
+  }
 }
